@@ -13,7 +13,7 @@ exports.delstik = (a, b) =>{
 	}
 exports.profile = (username, m, about, pasangan, PhoneNumber, exp, min, xp, math, prefix, level, role, limit, registered, tanggal_, regTime,premium, msToDate , premiumDate, now, lastclaim) =>{
 	return`📛 Name: ${username} (@${m.sender.split`@`[0]})${about ? '\n💌 Bio: ' + about : ''}
-👨‍❤️‍👨 Status: ${pasangan ? `Berpacaran @${pasangan.split`@`[0]}` : '-' }
+👨‍❤️‍👨 Status: ${pasangan ? `dating @${pasangan.split`@`[0]}` : '-' }
 #️⃣ Number: ${PhoneNumber('+' + m.sender.replace('@s.whatsapp.net', '')).getNumber('international')}
 🔗 Link: https://wa.me/${m.sender.split`@`[0]}
 🤷‍♂️ XP: Total ${exp} (${exp - min} / ${xp}) [ ${math <= 0 ? `Ready to *${prefix}levelup*` : `${math} XP left to levelup`} ]
@@ -26,7 +26,7 @@ exports.profile = (username, m, about, pasangan, PhoneNumber, exp, min, xp, math
 	}
 
 exports.needReg = (a, b, c) =>{
-	return`🇲🇨 Daftar dulu bang
+	return`Register first bro
 
 Gini : #daftar nama|umur|gender|hobi
 
@@ -52,7 +52,7 @@ exports.NoseriOk = () =>{
 	return`Successfully cancel registration!`
 	}
 exports.ExReg = (c) =>{
-	return`🇲🇨 Gunakan tanda "|" sebagai pembatas
+	return` Use sign "|" as a barrier
 
 Gini : #daftar nama|umur|gender|hobi
 
@@ -286,31 +286,31 @@ exports.OffNsfw = () => {
     return `The nsfw feature has not been activated`
 }
 exports.CoverBanLol = (prefix, command) => {
-    return `Example : ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`
+    return `Example : ${prefix + command} nama|heroes\nUsage: ${prefix + command} Ariyan|jinx7`
 }
 exports.coverbannerlol = (style) => {
     return `*The Heroes You Entered are Wrong*\n\n_Here's the list of true heroes, Total_ *${style}* _heroes_\n\n`
 }
 exports.pubglogomaker = (prefix, command) => {
-    return `Example : ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`
+    return `Example : ${prefix + command} nama|style\nUsage: ${prefix + command} Ariyan|Ahmed`
 }
 exports.pubglogomaker_ = (style) => {
     return `*The style you entered is wrong*\n\n_Here's a list of the correct styles, Total_ *${style}* _style_\n\n`
 }
 exports.colorfulpubg = (prefix, command) => {
-    return `Example : ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`
+    return `Example : ${prefix + command} nama|color\nUsage: ${prefix + command} Ariyan|gold`
 }
 exports.colorfulpubg_ = (style) => {
     return `*The color you entered is wrong*\n\n_Here's a list of the correct colors, Total_ *${style}* _color_\n\n`
 }
 exports.astronotspace = (prefix, command) => {
-    return `Example: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`
+    return `Example: ${prefix + command} nama|style\nUsage: ${prefix + command} Ariyan|anubis`
 }
 exports.wallpaperaov = (prefix, command) => {
-    return `Example: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`
+    return `Example: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Ariyan|allain`
 }
 exports.maketeamlogo = (style, style2, prefix, command) => {
-    return `Example: ${prefix + command} nama|${style}\nUsage: ${prefix + command} zeeone|${style2}`
+    return `Example: ${prefix + command} nama|${style}\nUsage: ${prefix + command} Ariyan|${style2}`
 }
 
 exports.MaketeamlogoT = (a, b, c, d, e, f, g, h) => {
@@ -420,7 +420,7 @@ exports.TbJail = (prefix, command) => {
     return `Send/Reply Photo/Sticker With Caption ${prefix + command}`
 }
 exports.TbRepo = (prefix, command) => {
-    return `Send command ${prefix + command} *user* *repo* *branch*\n\nExp. ${prefix + command} *zeeone-ofc* *Alphabot-Md* *v12*`
+    return `Send command ${prefix + command} *user* *repo* *branch*\n\nExp. ${prefix + command} *Ariyan-Ahmed* *Ariyanbot-Md* *v12*`
 }
 exports.StalkIg = () => {
     return `Enter username`
@@ -731,7 +731,7 @@ i'm ${botname}, this bot is Whatsapp Multi-Device Beta.
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu AriyanBot-Md :*
 
 ╭─❒ 「 Bot Info 」 
 │○ !owner
@@ -1737,7 +1737,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ Mhankbarbar
 │○ Nurutomo
 │○ Rashid
-│○ ZeeoneOfc
+│○ Ariyan Ahmed
 │○ Penyedia Module
 ╰❒ And All Support
     `
@@ -1751,43 +1751,38 @@ exports.rules = (prefix) => {
 2. Jangan telepon bot. ☎️
 3. Jangan membandingkan bot 👍
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan.
+🗯️Bots dont or slow to respond?
+ ➡️ Maybe influenced by network, signal, banned by Whatsapp and some random reasons.
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini bisa kalian dapatkan di YouTube ZEEONE OFC
+🗯️ Where can I get the Script from this bot? 
+➡️ You can get this script on Website
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk itu tergantung dari owner bot sendiri
+🗯️ May I add to the group? 
+➡️ For that it depends on the bot owner himself 
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix & bisa kamu gunakan tanpa prefix
+🗯️ Whats the prefix? 
+➡️ This bot uses multi prefix & you can use it without prefix If you understand the rules, please type *${prefix}menu* to get started! 
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}menu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan bot dapat berubah kapan saja 
-
-Terimakasih! 
+⚠️ All bot policies and conditions are subject to change at any time Thank You!
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`dont forget the foot intro 🤗
 	
-╭ 𝖭𝖺𝗆𝖺 :
-│○ 𝖴𝗆𝗎𝗋 :
-│○ 𝖦𝖾𝗇𝖽𝖾𝗋 :
-│○ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╭ Name :
+│○ Age :
+│○ Gender :
+╰❒ Follow the group rules, bro ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
+	return`Well how come it's out 😣 Mentally safe right sis >.<
 Goodbye`
 }
 exports.source = () =>{
 return`*------「 SOURCE CODE 」 ------*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://s.id/YouTube-Zeeoneofc
+Base : https://github.com/AriyanMods54
+Recode : https://s.id/YouTube
 `
 }
 exports.tos = (ownernomer) => {
@@ -2459,7 +2454,7 @@ exports.tqto = () =>{
 │○ Mhankbarbar
 │○ Nurutomo
 │○ Rashid
-│○ ZeeoneOfc
+│○ Ariyan Ahmed
 │○ Penyedia Module
 ╰❒ And All Support
 `
